@@ -15,7 +15,7 @@ export default function willCollide(player, rect2) {
 
   //y collision
   if (
-    // rect2.y > player.y &&
+    player.y< rect2.y+30 &&
     rect2.y < player.y + 5 + player.height &&
     player.x < rect2.x + rect2.width &&
     player.x + player.width > rect2.x &&
